@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:8080
+
+
+### PRODUTO
+
+### Cadastrar Produto
+POST {{baseUrl}}/produtos
+Content-Type: application/json
+{
+    "categoriaId":2,
+    "nome": "Parmegiana de Frango",
+    "descricao": "File  de frango a parmegiana",
+    "preco": 49.90,
+    "disponivel": true,
+    "tempoPreparoMinutos": 35
+}
+
+### Listar produtos
+GET {{baseUrl}}/produtos?page=0&size=10&sort=nome,asc
+
+### Buscar produto por id
+GET {{baseUrl}}/produtos/1
+
+### Atualizar produto
+PUT {{baseUrl}}/produtos/6
+{
+    "categoriaId":2,
+    "nome": "Parmegiana de Frango",
+    "descricao": "File  de frango a parmegiana",
+    "preco": 45.90,
+    "disponivel": true,
+    "tempoPreparoMinutos": 35
+}
+
+### Deletar produto por id
+DELETE {{baseUrl}}/produtos/6

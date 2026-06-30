@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "pedido_itens")
@@ -35,4 +36,15 @@ public class PedidoItem {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "produto_id")
     private Produto produto;
+
+    @Column(name = "data_inicio_preparo")
+    private LocalDateTime dataInicioPreparo;
+
+    @Column(name = "data_pronto")
+    private LocalDateTime dataPronto;
+
+    @Column(name = "data_entrega")
+    private LocalDateTime dataEntrega;
+
+
 }

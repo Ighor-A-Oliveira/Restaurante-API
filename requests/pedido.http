@@ -1,0 +1,50 @@
+@baseUrl = http://localhost:8080
+
+### PEDIDO
+
+### Criar Pedido
+POST {{baseUrl}}/pedidos
+Content-Type: application/json
+{
+    "mesaId":1,
+    "observacao": "Cliente pediu atendimento rapido"
+}
+
+### Listar produtos
+GET {{baseUrl}}/pedidos?page=0&size=10&sort=dataAbertura,desc
+
+### Buscar produto por id
+GET {{baseUrl}}/pedidos/1
+
+### Atualizar produto
+PUT {{baseUrl}}/pedidos/6
+{
+    "categoriaId":2,
+    "nome": "Parmegiana de Frango",
+    "descricao": "File  de frango a parmegiana",
+    "preco": 45.90,
+    "disponivel": true,
+    "tempoPreparoMinutos": 35
+}
+
+### Deletar produto por id
+DELETE {{baseUrl}}/pedidos/6
+
+
+### Add item ao pedido
+POST {{baseUrl}}/pedidos/1/itens
+{
+    "productId": 1,
+    "quantidade": 2,
+    "observacao": "Sem cebola"
+}
+
+{
+    "productId": 2,
+    "quantidade": 1,
+    "observacao": "Com molho extra"
+}
+
+
+### Listar itens do pedido
+GET {{baseUrl}}/pedidos/1/itens

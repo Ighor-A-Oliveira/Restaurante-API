@@ -53,6 +53,9 @@ create table pedido_itens (
     preco_unitario numeric(10,2) not null check (preco_unitario >= 0),
     observacao text,
     status varchar(30) not null default 'PENDENTE',
+    data_inicio_preparo TIMESTAMP,
+    data_pronto TIMESTAMP,
+    data_entrega TIMESTAMP,
     check (status in ('PENDENTE', 'EM_PREPARO', 'PRONTO', 'ENTREGUE', 'CANCELADO'))
 );
 

@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:8080
+
+### COZINHA
+
+### Listar Itens Pendentes
+GET {{baseUrl}}/cozinha/itens-em-preparo
+
+### Iniciar Preparo Do Item
+PATCH {{baseUrl}}/cozinha/itens/1/iniciar-preparo
+
+### Marcar Item Como Pronto
+PATCH {{baseUrl}}/cozinha/itens/1/marcar-pronto
+
+### Entregar 0 Item
+PATCH {{baseUrl}}/cozinha/itens/1/entregar

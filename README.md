@@ -129,6 +129,6 @@ Esse projeto ainda está em evolução, é um espaço onde venho aplicando e tes
 
 ## Autor
 
-## Ighor Oliveira
-### GitHub: https://github.com/Ighor-A-Oliveira
+Ighor Oliveira
+- GitHub: https://github.com/Ighor-A-Oliveira
 

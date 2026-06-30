@@ -128,7 +128,6 @@ Por padrão a aplicação sobe usando o H2 em memória, então não precisa conf
 Esse projeto ainda está em evolução, é um espaço onde venho aplicando e testando conceitos enquanto estudo Spring e arquitetura de APIs. Sugestões e feedbacks são sempre bem-vindos.
 
 ## Autor
-
 Ighor Oliveira
-- GitHub: https://github.com/Ighor-A-Oliveira
+GitHub: https://github.com/Ighor-A-Oliveira
 

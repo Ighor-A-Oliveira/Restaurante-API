@@ -14,7 +14,7 @@ A ideia é simular o dia a dia de um restaurante:
 - Pagamento do pedido, feito através de uma chamada para um serviço externo de pagamento (via Feign). Se o pagamento for aprovado, o pedido é fechado e a mesa volta a ficar livre automaticamente
 - Um worker rodando em background a cada minuto, usando virtual threads, que verifica se algum item da cozinha está demorando mais do que o tempo de preparo esperado e dispara um alerta
 
-Para testar a parte de pagamento é necessário rodar também a API mock que simula o serviço de pagamento, disponível aqui:
+Para testar a parte de pagamento é necessário rodar num projeto separado a API mock que simula o serviço de pagamento, disponível aqui:
 
 https://github.com/Ighor-A-Oliveira/Restaurante-API-PagamentoFake
 
@@ -119,7 +119,7 @@ git clone https://github.com/Ighor-A-Oliveira/Restaurante-API.git
 
 Por padrão a aplicação sobe usando o H2 em memória, então não precisa configurar nenhum banco externo pra testar. O console do H2 fica disponível em `/h2-console`.
 
-3. Se quiser testar o fluxo de pagamento, suba também a API mock de pagamento (basta clonar e executar num projeto diferente, https://github.com/Ighor-A-Oliveira/Restaurante-API.git) e configure a porta dela em `pagamento.api.url`, no `application.properties`.
+3. Se quiser testar o fluxo de pagamento, suba também a API mock de pagamento (link acima) e configure a porta dela em `pagamento.api.url`, no `application.properties`.
 
 4. Com a aplicação no ar, acesse o Swagger UI pra ver e testar todos os endpoints listados acima.
 
@@ -131,6 +131,4 @@ Esse projeto ainda está em evolução, é um espaço onde venho aplicando e tes
 
 Ighor Oliveira
 GitHub: https://github.com/Ighor-A-Oliveira
-
-
 

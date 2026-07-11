@@ -56,7 +56,7 @@ public class PedidoController {
         return pedidoService.listarItens(pedidoId);
     }
 
-    @PostMapping("/pedidos/{pedidoId}/pagar")
+    @PostMapping("/{pedidoId}/pagar")
     public void pagar(@PathVariable Long pedidoId, @RequestBody String formaPagamento){
         pagamentoService.pagar(pedidoId, formaPagamento);
     }

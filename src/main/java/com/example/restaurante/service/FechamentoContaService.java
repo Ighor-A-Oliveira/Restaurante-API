@@ -1,12 +1,10 @@
 package com.example.restaurante.service;
 
-import com.example.restaurante.FechamentoContaResponse;
+import com.example.restaurante.dto.FechamentoContaResponse;
 import com.example.restaurante.domain.entity.FechamentoConta;
-import com.example.restaurante.domain.entity.Mesa;
 import com.example.restaurante.domain.entity.Pedido;
 import com.example.restaurante.domain.entity.PedidoItem;
 import com.example.restaurante.domain.enums.StatusItemPedido;
-import com.example.restaurante.domain.enums.StatusMesa;
 import com.example.restaurante.domain.enums.StatusPedido;
 import com.example.restaurante.dto.FechamentoContaRequest;
 import com.example.restaurante.exception.RegraNegocioException;

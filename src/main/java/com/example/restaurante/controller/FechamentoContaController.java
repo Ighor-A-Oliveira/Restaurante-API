@@ -1,6 +1,6 @@
 package com.example.restaurante.controller;
 
-import com.example.restaurante.FechamentoContaResponse;
+import com.example.restaurante.dto.FechamentoContaResponse;
 import com.example.restaurante.dto.FechamentoContaRequest;
 import com.example.restaurante.service.FechamentoContaService;
 import org.springframework.web.bind.annotation.*;

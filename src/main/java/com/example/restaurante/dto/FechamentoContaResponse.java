@@ -1,4 +1,4 @@
-package com.example.restaurante;
+package com.example.restaurante.dto;
 
 import com.example.restaurante.domain.entity.FechamentoConta;
 
